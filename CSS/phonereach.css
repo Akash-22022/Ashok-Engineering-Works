@@ -2,13 +2,12 @@
     background-color: rgb(238, 238, 238);
 }
 
-h2{
-    /* background-color: violet; */
-    /* border: 5px solid salmon; */
-    text-align: center;
-    font-family: 'Bree Serif', serif;
+html{
+    scroll-behavior: smooth;
 }
-
+:root{
+    --navbar-height: 59px;
+}
 
 #navbar{
     display: flex;
@@ -42,7 +41,7 @@ h2{
 #navbar ul li a{
     color: olive;
     display: block;
-    padding: 5px 30px;
+    padding: 5px 12px;
     border-radius: 20px;
     text-decoration: none;
 }
@@ -52,33 +51,39 @@ h2{
     background-color: white;
 }
 
-.container{
+h2{
+    padding: 5px 60px;
+}
+
+img{
+    border: 5px solid white;
+    margin: 0px 150px;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    /* padding: 0px 50px; */
+}
+.me{
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
     display: grid;
-    /* background-color: rosybrown; */
-    /* grid-template-rows:repeat(auto-fit,minmax(50px,200px)); */
-    grid-template-areas: 
-    'section section aside'
-    'aside aside aside';
-    
+    padding: 50px 65px;
+    grid-template-columns: 25% 75%;
 }
 
-
-.intro{
-    padding: 25px 25px;
-    /* text-align: center; */
-    /* border: 10px solid rgb(172, 155, 155) ; */
-    border-radius: 5px;
-    margin: 10px 10px;
+.address{
+    display: grid;
+    grid-template-columns: 35%;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    padding: 50px 50px;
+    margin: 0px 50px;
+    /* text-align: none; */
 }
-.mySlides{
-    position:relative;
-    border: 5px solid white ;
-   /* display: none; */
-   /* margin: 20px 5px; */
-   margin-right: 20px;
-   margin-left: 10px;
-   width: 100%;
-   height: 80%;
+
+iframe{
+    padding: 20px 20px;
+    border: 2px solid black;
 }
 
 .copy{
@@ -90,3 +95,4 @@ h2{
     font-size: 10px;
     text-align: center;
 }
+
