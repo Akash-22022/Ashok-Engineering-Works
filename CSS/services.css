@@ -1,0 +1,92 @@
+*{
+    background-color: rgb(238, 238, 238);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+    
+    #navbar::before{
+        content: "";
+        /* background-color: black; */
+        background-color: rgb(238, 238, 238);
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        opacity: 1;
+    }
+    
+    #navbar ul{
+        display: flex;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    
+    #navbar ul li{ 
+        list-style: none;
+        font-size: 1.3rem;
+    }
+    
+    #navbar ul li a{
+        
+        color: olive;
+        display: block;
+        padding: 5px 30px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+    }
+
+.container{
+    display: grid;
+    /* background-color: greenyellow; */
+    /* border: 5px solid whitesmoke; */
+    grid-template-columns: repeat(auto-fit,minmax(20px,300px));
+    justify-content: center;
+    align-items: center;
+}
+
+
+.piro{
+    font-family: 'Bree Serif', serif;
+   text-align: center;
+   height: 225px;
+   width: 225px;
+   background-color: white;
+   margin: 12px 5px;
+   padding: 5px 5px;
+}
+.piro img{
+    /* text-align: center; */
+    height: 190px;
+    width: 190px;
+    /* background-color: wheat; */
+    margin: 5px 5px;
+
+ }
+
+ .copy{
+    /* position: absolute; */
+    padding: 10px 0px;
+    /* margin: 100px 0px; */
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    text-align: center;
+}
